@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        window.onload = function() {
+          fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+        };
+        $("#loginForm").submit(function(e) {
+            e.preventDefault();
+            $.post("/login", $(this).serialize(), function(data) {
+                if (data.success) {
+                    alert("Logged in successfully");
+                    window.location.href = "register.html";
+                } else {
+                    alert("Login failed");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

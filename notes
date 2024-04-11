@@ -1,0 +1,2 @@
+this command will add a user to the database, without any credentials, from anywhere.       
+curl -d "username=user&password=pass" -X POST https://codytommasini.xyz/register

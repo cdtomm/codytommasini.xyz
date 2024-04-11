@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #af6b4c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+  }
+  
+  .name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Rock Salt", "cursive";
+    font-weight: normal;
+    color: white;
+    padding: 10px;
+  }
+  
+  .name-large {
+    font-size: 8em;
+  }
+
+  .btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.67em;
+    cursor: pointer;
+  }
+  
+  .btn-header {
+    margin: 0.5em 15% 2em 15%;
+    color: white;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15%;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  
+  .btn-header:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .nav ul {
+    margin: 0;
+  }
+  
+  .nav li {
+    display: inline;
+  }
+  
+  .nav a {
+    display: inline-block;
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .main-nav li {
+    padding: 0 5%;
+  }
+
+  .nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .main-footer {
+    background-color: gray;
+    color: white;
+    padding: 0.25em 0;
+  }
+  
+  .main-footer-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+  }
+  
+  .footer-nav li {
+    padding: 0 0.5em;
+  }
+  
+  .footer-nav img {
+    width: 30px;
+    height: 30px;
+  }
